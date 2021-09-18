@@ -68,22 +68,24 @@
 	    th {
 		    font-family: 'Averia Serif Libre';
 		    font-size: 20px;
-	    font-weight:300;}
+	    font-weight:300;
+	    text-align:left;
+	    padding-left: 25px;}
 		    
 	    .myDiv{
 		    display:none;
 	    }
 	
-	    th:first-child,
-td:first-child {
-  background: linear-gradient(black 50%, black 50%) top right / 1px 100% no-repeat;
-}
-th:first-child {
-  background-position: bottom right;
-  background-size: 1px 50%;
-}
-tr:last-child td:first-child {
-  background-size: 1px 50%;
+	   table.borderless { 
+    tbody {
+        tr {
+            td {
+                &:first-child {
+                    border-right: 2px solid black;
+                }
+            }
+        }
+    }
 }
 	    
     </style>
@@ -133,6 +135,7 @@ tr:last-child td:first-child {
 
 <div id="myDIV" class="myDiv">
   <table style="width:95%">
+	  <tbody>
 	  <tr>
 		  <th style="width: 70%; text-align:left; padding-left: 25px">Korter maken</th>
 		  <th style="text-align:left; border: 2px black;">€7.50</th>
@@ -221,6 +224,7 @@ tr:last-child td:first-child {
 		  <th style="width: 70%; text-align:left; padding-left: 25px">Losse zoom vastzetten met de hand (per zoom)</th>
 		  <th>€4.50</th>
 	  </tr>
+	  </tbody>
 	</table>
 </div> 
 	    <br>
@@ -228,6 +232,7 @@ tr:last-child td:first-child {
 
 <div id="myDIV1" class="myDiv">
   <table style="width:95%">
+	 <tbody>
 	  <tr>
 		  <th style="width: 70%; text-align:left; padding-left: 25px">Korter maken</th>
 		  <th>€7.50</th>
@@ -276,6 +281,7 @@ tr:last-child td:first-child {
 		  <th style="width: 70%; text-align:left; padding-left: 25px">Pijpen smaller maken</th>
 		  <th>€8.00</th>
 	  </tr>
+	  </tbody>
 	</table>
 	    </div>
 	    
@@ -284,6 +290,7 @@ tr:last-child td:first-child {
 
 <div id="myDIV2" class="myDiv">
   <table style="width:95%">
+	  <tbody>
 	  <tr>
 		  <th style="width: 70%; text-align:left; padding-left: 25px">Korter maken</th>
 		  <th>€7.50</th>
@@ -356,6 +363,7 @@ tr:last-child td:first-child {
 		  <th style="width: 70%; text-align:left; padding-left: 25px">Haak en oog aanzetten (per stuk)</th>
 		  <th>€2.00</th>
 	  </tr>
+	  </tbody>
 	</table>
 	    </div>
     </div>
