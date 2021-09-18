@@ -73,13 +73,13 @@
 	
     </style>
     
-    <script>
+      <script>
       function myFunction() {
   var x = document.getElementById("myDIV");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
+  if (x.style.display === "none") {
     x.style.display = "block";
+  } else {
+    x.style.display = "none";
   }
 }
     </script>
@@ -98,7 +98,7 @@
     <div class="row">        
     <button class="plus" onclick="myFunction()">+</button><h3 style="display:inline"> Broek/Pantalon</h3>
 
-<div id="myDIV">
+<div id="myDIV" visibility="hidden">
   <table style="width:95%">
 	  <tr>
 		  <th style="width: 70%; text-align:left; padding-left: 25px">Broek korter maken</th>
